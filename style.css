@@ -1,0 +1,45 @@
+html { 
+     height:100vh;
+ }
+ body { 
+     min-height:100vh;
+     display: flex;
+     flex-direction: column;
+     background-color: #212121;
+ }
+.bg-primary-mine{
+     background-color: #212121;
+}
+
+.color-white{
+     color: #fff !important;
+}
+.color-green{
+     color:#4FD294
+}
+.text-1{
+     font-family: 'Ysabeau Office', sans-serif;
+}
+
+.image-container{
+     width: 40%;
+     display: block;
+     float: right;
+}
+
+.content-container{
+     width: 60%;
+     display: inline-block;
+     padding-left: 10em;
+     padding-right: 5em;
+     
+}
+.content-text-name{
+     margin-top: 20vh;
+}
+
+.more-info{
+     display: inline-block;
+    margin-top: 10px;
+     background-color: #373F42;
+}
