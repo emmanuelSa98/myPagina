@@ -1,12 +1,13 @@
-html { 
+html, body { 
      height:100vh;
- }
- body { 
-     min-height:100vh;
-     display: flex;
-     flex-direction: column;
+     /* width: 100vw; */
      background-color: #212121;
  }
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+ 
 .bg-primary-mine{
      background-color: #212121;
 }
@@ -20,23 +21,95 @@ html {
 .text-1{
      font-family: 'Ysabeau Office', sans-serif;
 }
-
 .image-container{
-     width: 40%;
-     display: block;
-     float: right;
+     display: flex;
+     justify-content: center;
 }
 
-.content-container{
-     width: 60%;
-     display: inline-block;
-     padding-left: 10em;
-     padding-right: 5em;
+
+
+
+@media screen and (max-width: 768px) {
+     /* reglas de diseño para el ancho ANCHO o menos */
+     .content{
+          margin-top: 2vh;
+          margin-bottom: auto;
+     }
+     .content-text-name{
+          margin-top: 8vh;
+     }
+     .image-container{
+          margin-top: 2vh;
+     }
+     .image-mine{
+          max-width: 100%; 
+          width: -webkit-fill-available;
+          height: fit-content !important;
+      }
+}
+
+@media screen and (min-width: 992px) {
+     /* reglas de diseño para el ancho ANCHO o menos */
+     .content{
+          margin-top: 30vh;
+          margin-bottom: auto;
+          padding-left: 10vw;
+          padding-right: 5vw;
+     }
+     .content-text-name{
+          width: 80%;
+          margin-left: 20%;
+          padding-left: 2vw;
+          padding-right: 2vw;
+          background-color: rgba(67, 67, 83, 0.5);
+          padding-top: 5vh;
+          padding-bottom: 5vh;
+     }
      
+     .image-mine{
+          padding: 20px;
+          max-width: 100%; 
+          /* width: -webkit-fill-available; */
+          height: fit-content !important;
+      }
 }
-.content-text-name{
-     margin-top: 20vh;
+@media screen and (min-width: 992px) {
+     /* reglas de diseño para el ancho ANCHO o menos */
+     .content{
+          margin-top: 30vh;
+          margin-bottom: auto;
+          padding-left: 10vw;
+          padding-right: 5vw;
+     }
+     
+     .image-mine{
+          padding: 20px;
+          max-width: 100%; 
+          /* width: -webkit-fill-available; */
+          height: fit-content !important;
+      }
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+     /* reglas de diseño para el ancho ANCHO o menos */
+     .content{
+          /* margin-top: 17vh; */
+          margin-bottom: auto;
+     }
+     .content-text-name{
+          margin-top: 10vh;
+     }
+     .image-container{
+          margin-top: 5vh;
+          width: 100%;
+     }
+     .image-mine{
+          max-width: 100%; 
+          width: auto;
+          height: fit-content !important;
+      }
+}
+     
+
 
 .more-info{
      display: inline-block;
